@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'fonteLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+
+/* INTERFACE */
+body {
+    background:gainsboro;
+    color: rgba(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+div#interface{
+    width: 1000px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* Cabeçalho */
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1200px;
+    top: 70px;
+}
+
+header#cabecalho {
+    border-bottom: 1px black solid;
+    height: 150px;
+    background:url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+}
+
+header#cabecalho h1 {
+    font-family: 'fonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+
+
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;     
+}
+
+
+
+/* Formatação do menu */
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 800px;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: gainsboro;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: solid;
+}
+
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* CORPO DO SITE */
+section#corpo{
+    display: block;
+    width: 520px;
+    float: left;
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+
+aside#lateral{
+    display: block;
+    width: 430px;
+    float: right;
+    background-color: gainsboro;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba;
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: gray;
+}
+
+aside#lateral h2{
+    background-color: gray;
+    font-size: 12pt;
+    color: white;
+    padding: 5px;
+}
+
+footer#rodape {
+    text-align: center;  
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+
+
+/* ARTIGOS */
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: gray;
+    background-color: gainsboro;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalhodeartigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: gray;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita{
+    text-align: right;
+}
+
+header#cabecalhodeartigo h2 {
+    font-size: 12pt;
+    color: rgb(199, 198, 198);
+    background: none;
+    margin: 0px;
+    padding-left: 2px;
+}
+
+header#cabecalhodeartigo h3 {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+/* TABELA */
+table#tabelaspec{
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td.ce{
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+    text-align: right;
+    vertical-align: top;
+}
+
+table#tabelaspec td.cd{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: gainsboro;
+    text-align: left;
+    vertical-align: top;
+}
+
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 12px;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+
+}
+
+
+
+/* VIDEOS */
+video#video1{
+    width: auto;
+    height: 290px;
+}
+
+video#video2{
+    width: auto;
+    height: 235px;
+}
